@@ -4,15 +4,28 @@ public class ejercicio2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double sueldo;
-		double comision;
-	    double total;
+	   float sueldo=1200;
+	   final float porcentaje=0.1f;
+	   float comision;
+	   float venta=0;
+
 		Scanner sc=new Scanner(System.in);
-		System.out.println("introduce sueldo ");
-		sueldo=sc.nextDouble();
-		comision=1.10*3;
-		total=(sueldo*1.10)*3;//total
-		System.out.println(" comision 3 meses : "+comision+" total sueldo:"+total);
+		System.out.println("introduce valor venta");
+		venta=sc.nextFloat();
+    	comision=venta*porcentaje;
+    	sueldo+=comision;
+   
+    	System.out.println("introduce valor venta");
+    	venta=sc.nextFloat();
+    	comision=venta*porcentaje;
+    	sueldo+=comision;
+    	
+    	System.out.println("introduce valor venta");
+    	venta=sc.nextFloat();
+    	comision=venta*porcentaje;
+    	sueldo+=comision;
+    	
+		System.out.println(sueldo);
 	}
 
 }
